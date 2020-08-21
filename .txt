@@ -1,22 +1,28 @@
 <template>
   <div id="app">
     <NavBar title="My Portfolio" >
-      <NavBarItem text="About" url="/about" />
-      <NavBarItem text="Contact" url="/contact" />
+      <NavBarItem text="About" url="someurl" />
+      <NavBarItem text="Contact" url="someotherurl" />
       <NavBarItem text="Projects" url="someotherurl" />
     </NavBar>
-    <router-view/>
-    </div>
+    <Content bgcolor="black"> 
+
+    </Content>
+    <Content bgcolor="white" />
+    <Content bgcolor="black"/>
+  </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
 import NavBarItem from './components/NavBarItem.vue'
+import Content from './components/Content.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
+    Content,
     NavBarItem
   },
 }

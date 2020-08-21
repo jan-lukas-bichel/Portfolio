@@ -1,6 +1,6 @@
 <template>
   <nav class="navBar">
-    <h3 class="title">{{title}}</h3>
+    <router-link to="/"><h3 class="title">{{title}}</h3></router-link>
     <ul class="navList">
       <slot></slot>
     </ul>

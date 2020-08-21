@@ -1,6 +1,6 @@
 <template>
   <li class="nav-bar-item">
-    <a v-bind:href="url">{{text}}</a>
+    <router-link v-bind:to="url">{{text}}</router-link>
   </li>
 </template>
 
