@@ -1,5 +1,7 @@
 <template>
-  <div class="Content" v-bind:style="{ backgroundColor: bgcolor }"></div>
+  <div class="Content" v-bind:style="{ backgroundColor: bgcolor }">
+    <slot></slot>
+  </div>
 </template>
 
 <script>

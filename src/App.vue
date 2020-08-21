@@ -3,7 +3,6 @@
     <NavBar title="My Portfolio" >
       <NavBarItem text="About" url="/about" />
       <NavBarItem text="Contact" url="/contact" />
-      <NavBarItem text="Projects" url="someotherurl" />
     </NavBar>
     <router-view/>
     </div>
