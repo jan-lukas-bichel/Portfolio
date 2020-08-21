@@ -1,28 +1,55 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar title="My Portfolio" >
+      <NavBarItem text="About" url="someurl" />
+      <NavBarItem text="Contact" url="someotherurl" />
+      <NavBarItem text="Projects" url="someotherurl" />
+    </NavBar>
+    <Content bgcolor="black"> 
+
+    </Content>
+    <Content bgcolor="white" />
+    <Content bgcolor="black"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import NavBarItem from './components/NavBarItem.vue'
+import Content from './components/Content.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    NavBar,
+    Content,
+    NavBarItem
+  },
 }
 </script>
 
 <style>
+body{
+  margin: 0;
+  margin-top: 8vh;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #f0d374;
 }
+
+a{
+  text-decoration: none;
+  color: #f0d374;
+}
+
+ul{
+  list-style: none;
+}
+
+
 </style>
