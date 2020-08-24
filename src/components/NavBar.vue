@@ -26,7 +26,7 @@ export default {
   top: 0;
   left: 0;
   width: 96%;
-  min-height: 8vh;
+  height: 8vh;
   padding-left: 2%;
   padding-right: 2%;
   background: #555;
